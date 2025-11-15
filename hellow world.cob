@@ -1,7 +1,12 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO.
+       DATA DIVISION.
+       working-storage SECTION.
+       01 nombre_usario PIC A(30).
+       
        PROCEDURE DIVISION.
-           DISPLAY "Hello, World!".
-           DISPLAY "UR MOM"
+           DISPLAY "Introduce tu nombre: ".
+           accept nombre_usario.
+           DISPLAY "Hola, "nombre_usario "!"
            STOP RUN.
            
